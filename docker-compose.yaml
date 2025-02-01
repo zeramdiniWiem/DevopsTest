@@ -29,6 +29,8 @@ services:
 
   app1:
     build: ./app1
+    ports:
+      - 80:80
     container_name: app1
     deploy:
       resources:
@@ -41,6 +43,8 @@ services:
 
   app2:
     build: ./app2
+    ports:
+      - 80:80
     container_name: app2
     deploy:
       resources:
